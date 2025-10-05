@@ -1,0 +1,13 @@
+{
+  "name": "final_exam",
+  "version": "1.0.0",
+  "description": "Online Bookstore API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": ["bookstore", "api"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
