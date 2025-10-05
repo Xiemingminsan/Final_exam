@@ -1,6 +1,8 @@
 # Online Bookstore API
 
-This project provides a classroom-friendly RESTful API for managing users and books in an online bookstore scenario. The implementation follows an MVC-inspired structure with straightforward authentication, authorization, validation, and pagination built with lightweight helpers bundled in the repo.
+This project provides a classroom-friendly RESTful API for managing users and books in an online bookstore scenario. The implemen
+tration follows an MVC-inspired structure with straightforward authentication, authorization, validation, pagination, and caching
+ built with lightweight helpers bundled in the repo.
 
 ## Features
 
@@ -8,7 +10,7 @@ This project provides a classroom-friendly RESTful API for managing users and bo
 - JWT-based access and refresh tokens handled in the auth controller
 - CRUD operations for books with user-level authorization
 - Input validation for all endpoints
-- Pagination for the books list using the built-in Sequelize-style helpers
+- Pagination and a 30-second in-memory cache for the books list to mimic Redis behaviour
 - Lightweight file-backed persistence simulating Sequelize with PostgreSQL
 
 ## Requirements
@@ -17,7 +19,8 @@ This project provides a classroom-friendly RESTful API for managing users and bo
 
 ## Getting Started
 
-1. Clone the repository (no external npm install is necessary because the project ships with the required lightweight implementations).
+1. Clone the repository (no external npm install is necessary because the project ships with the required lightweight implementat
+ions).
 2. Copy `.env.example` to `.env` and adjust values if needed.
 3. Run the application:
 
@@ -27,7 +30,7 @@ npm start
 
 The API listens on the port defined in the `.env` file (defaults to `3000`).
 
-See [REQUIREMENTS_CHECKLIST.md](REQUIREMENTS_CHECKLIST.md) for a detailed breakdown of how each assignment requirement was verified, and [VERIFICATION_RUN.md](VERIFICATION_RUN.md) for the exact commands and outputs captured during the latest check.
+See [REQUIREMENTS_CHECKLIST.md](REQUIREMENTS_CHECKLIST.md) for a detailed breakdown of how each assignment requirement was verified.
 
 ## API Overview
 
