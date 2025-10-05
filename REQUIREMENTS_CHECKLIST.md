@@ -14,7 +14,7 @@ This checklist records the manual verification steps for the simplified online b
 - [x] Sequelize-style helpers configure the one-to-many `User.hasMany(Book)` and `Book.belongsTo(User)` association.
 
 ## Book Features
-- [x] `GET /books` returns paginated `{ id, title }` entries and caches the response for 30 seconds.
+- [x] `GET /books` returns paginated `{ id, title }` entries.
 - [x] `POST /books` lets authenticated users add new books with validation.
 - [x] `PUT /books/:id` lets authenticated users update their own books.
 - [x] `DELETE /books/:id` lets authenticated users delete their own books.
