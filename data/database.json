@@ -1,0 +1,10 @@
+{
+  "data": {
+    "User": [],
+    "Book": []
+  },
+  "counters": {
+    "User": 1,
+    "Book": 1
+  }
+}
